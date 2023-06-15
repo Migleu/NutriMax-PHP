@@ -1,7 +1,11 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
+
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
 }
 
 a {
@@ -17,24 +21,25 @@ nav {
     color: #202020;
 }
 
-.logo i {
-    margin-right: 5px;
-}
-
-.logo h1{
-    font-weight: 800;
-    font-size: 25px;
-}
-
 .nav-itens {
     list-style: none;
     display: flex;
 }
-
 .nav-itens>li>a {
-    padding-left: 20px;
-    color: #202020;
-    text-decoration: none;
+  padding-left: 20px;
+  color: #202020;
+  text-decoration: none;
+}
+
+.logo i {
+    margin-right: 5px;
+}
+.logo h1{
+    font-weight: 800;
+    font-size: 25px;
+}
+.logo:hover {
+  cursor: pointer;
 }
 
 .login {
@@ -49,7 +54,45 @@ nav {
 }
 
 .main {
-    margin-top: 2%;
+  margin: 10px;
+  margin-top: 2%;
+}
+
+.inicio {
+  margin-top: 80px;
+  text-align: center;
+}
+.inicio h1 {
+  color: #000;
+}
+.inicio h1 span {
+  color: #495057;
+}
+
+.inicio .elementos {
+  display: flex;
+  justify-content: center;
+  width: 50%;
+  margin-top: 5px;
+  margin-left: 50%;
+  /* border: solid 2px #000; */
+  transform: translateX(-50%);
+}
+.inicio .elementos .elemento {
+  width: 20%;
+  padding: 5px;
+  margin-right: 20px;
+  border: solid 2px #495057;
+  border-radius: 20px;
+  color: #495057;
+  font-size: 15px;
+  margin-top: 2px;
+  font-weight: bolder;
+}
+.inicio .elementos .elemento:hover {
+  border-color: #000;
+  color: #000;
+  cursor: pointer;
 }
 
 .cadastro {
@@ -63,7 +106,6 @@ nav {
     cursor: pointer;
     transition: 1s background;
 }
-
 .cadastro:hover {
     background-color: #3d3d3d;
     transition: 1s background;
@@ -93,7 +135,7 @@ nav {
   .container {
     margin-top: 50px;
     width: 85%;
-    min-height: 95vh;
+    min-height: 120vh;
     margin: 0 auto;
     padding: 5px;
     color: #fff;
@@ -106,6 +148,7 @@ nav {
     width: 60%;
     padding: 20px;
   }
+
   .calendar {
     position: relative;
     height: 90%;
@@ -142,7 +185,7 @@ nav {
     align-items: center;
     justify-content: space-between;
     padding: 0 20px;
-    font-size: 1.2rem;
+    font-size: 20px;
     font-weight: 500;
     text-transform: capitalize;
   }
@@ -161,7 +204,7 @@ nav {
     align-items: center;
     justify-content: space-between;
     padding: 0 20px;
-    font-size: 1rem;
+    font-size: 16px;
     font-weight: 500;
     text-transform: capitalize;
   }
@@ -179,7 +222,7 @@ nav {
     flex-wrap: wrap;
     justify-content: space-between;
     padding: 0 10px;
-    font-size: 1rem;
+    font-size: 16px;
     font-weight: 500;
     margin-bottom: 20px;
   }
@@ -216,7 +259,7 @@ nav {
   }
   .calendar .days .active {
     position: relative;
-    font-size: 2rem;
+    font-size: 32px;
     color: #fff;
     background-color: var(--primary-clr);
   }
@@ -230,7 +273,7 @@ nav {
     box-shadow: 0 0 10px 2px var(--primary-clr);
   }
   .calendar .days .today {
-    font-size: 2rem;
+    font-size: 32px;
   }
   .calendar .days .event {
     position: relative;
@@ -322,11 +365,11 @@ nav {
     text-transform: capitalize;
   }
   .right .today-date .event-day {
-    font-size: 2rem;
+    font-size: 32px;
     font-weight: 500;
   }
   .right .today-date .event-date {
-    font-size: 1rem;
+    font-size: 16px;
     font-weight: 400;
     color: #878895;
   }
@@ -367,19 +410,19 @@ nav {
     pointer-events: none;
   }
   .events .event .title .event-title {
-    font-size: 1rem;
+    font-size: 16px;
     font-weight: 400;
     margin-left: 20px;
   }
   .events .event i {
     color: var(--primary-clr);
-    font-size: 0.5rem;
+    font-size: 8px;
   }
   .events .event:hover i {
     color: #fff;
   }
   .events .event .event-time {
-    font-size: 0.8rem;
+    font-size: 12px;
     font-weight: 400;
     color: #878895;
     margin-left: 15px;
@@ -394,7 +437,7 @@ nav {
     position: absolute;
     top: 50%;
     right: 0;
-    font-size: 3rem;
+    font-size: 48px;
     line-height: 1;
     display: none;
     align-items: center;
@@ -415,7 +458,7 @@ nav {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 1rem;
+    font-size: 16px;
     color: #878895;
     border: 2px solid #878895;
     opacity: 0.5;
@@ -498,7 +541,7 @@ nav {
     border: none;
     border-bottom: 1px solid #f5f5f5;
     padding: 0 10px;
-    font-size: 1rem;
+    font-size: 16px;
     font-weight: 400;
     color: #373c4f;
   }
@@ -519,7 +562,7 @@ nav {
   }
   .add-event-footer .add-event-btn {
     height: 40px;
-    font-size: 1rem;
+    font-size: 16px;
     font-weight: 500;
     outline: none;
     border: none;
@@ -590,9 +633,190 @@ nav {
     }
     .calendar .days .day.active,
     .calendar .days .day.today {
-      font-size: 1rem;
+      font-size: 16px;
     }
     .right .today-date {
       padding: 20px;
     }
   }
+
+
+
+  /* ////////////////// chat //////////// */
+.tudo{
+  position: relative;
+  width: 100%;
+  height: 80vh;
+  background:#fff;
+  box-shadow:0 1px 1px 0 rgba(0,0,0,0.06), 0 2px 5px 0 rgba(0,0,0,0.06);
+  display: flex;
+  border: solid 1px #000;
+}
+.tudo .box{
+  position: relative;
+  flex: 70%;
+  background: #e5ddd5;
+}
+
+.header{
+  position: relative;
+  width: 100%;
+  height: 60px;
+  background: #ededed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 15px;
+}
+
+.userimg{
+  position: relative;
+  width: 40px;
+  height: 40px;
+  overflow: hidden;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.cover{
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.chatlist .block{
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  border-bottom: 1px solid rgba(0,0,0,0.06);
+  cursor: pointer;
+}
+
+.img-perfil{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.img-perfil h4{
+color: black;
+  font-weight: 500;
+  line-height: 1.2em;
+  margin-left: 15px;
+}
+.img-perfil h4 span{
+  font-size: 16px;
+  font-weight: 600;
+  color: green;
+}
+
+.horario {
+list-style: none;
+color: #000;
+font-weight: 600;
+font-size: 1.5rem;
+}
+
+.sufixo {
+font-size: .5rem;
+}
+
+.chat{
+  position: relative;
+  width: 100%;
+  height: calc(100% - 120px);
+  padding: 50px;
+  overflow: auto;
+}
+.messages{
+  position: relative;
+  display: flex;
+  width: 100%;
+  margin: 5px 0;
+  gap: 10px;
+  flex-direction: column;
+  align-items: end;
+}
+.messages p{
+color: black;
+  position: relative;
+  right: 0;
+  text-align: right;
+  max-width: 65%;
+  padding: 12px;
+  background: #dcf8c6;
+  border-radius: 10px;
+  font-size: 0.9em;
+}
+.messages p::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  right: -12px;
+  width: 20px;
+  height: 20px;
+  background:linear-gradient(135deg, #dcf8c6 0%, #dcf8c6 50%, transparent 50%, transparent);
+}
+.messages p span{
+  display: block;
+  margin-top: 5px;
+  font-size: 0.85em;
+  opacity: 0.3;
+  color: green;
+  font-weight: 600;
+}
+.you-message{
+  justify-content: flex-end;
+}
+.nutri-message{
+  justify-content: flex-start;
+}
+.nutri-message p{
+  background: #fff;
+  text-align: left;
+}
+.messages.nutri-message p::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -12px;
+  width: 20px;
+  height: 20px;
+  background:linear-gradient(225deg, #fff 0%, #fff 50%, transparent 50%, transparent);
+}
+
+.chatbox-input{
+  position: relative;
+  width: 100%;
+  height: 60px;
+  background: #f0f0f0;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.chatbox-input i{
+  position: relative;
+  font-size: 1.8em;
+  color: #51585c;
+  cursor: pointer;
+}
+.chatbox-input i:nth-child(1){
+  margin-left: 15px;
+
+}
+.chatbox-input input{
+  position: relative;
+  width: 90%;
+  margin: 0 20px;
+  padding: 10px 20px;
+  border: none;
+  outline: none;
+  border-radius: 30px;
+  font-size: 1em;
+}
