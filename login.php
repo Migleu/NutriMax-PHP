@@ -13,7 +13,7 @@
 <body>
     <div class="container">
         <div class="hero">
-            <form action="" method="post">
+            <form action="bancoLogin.php" method="post">
                 <div class="gp1">
                 <a href="./index.php"><i class="fa-sharp fa-solid fa-arrow-left"></i></a>
                     <h1>Bem-vindo <span>Logue-se!</span></SPAn></h1>

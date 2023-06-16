@@ -13,7 +13,7 @@
 <body>
     <div class="container">
         <div class="hero">
-            <form action="" method="post">
+            <form action="bancoCadastro.php" method="post">
                 <div class="gp1">
                 <a href="./index.php"><i class="fa-sharp fa-solid fa-arrow-left"></i></a>
                     <h1>Bem-vindo <span>Cadastre-se!</span></SPAn></h1>
@@ -21,7 +21,7 @@
                 <div class="gp2">
                     <input name="email" type="email" placeholder="Email"><br>
                     <input name="senha" type="password" placeholder="Senha"><br>
-                    <input name="confirmsenha" type="password" placeholder="Confirme sua Senha"><br>
+                    <input name="confirmSenha" type="password" placeholder="Confirme sua Senha"><br>
                     <input type="submit" nam="submit" value="Logar">
                     <p><a href="./login.php">Já tenho uma conta!</a></p>
                 </div>
