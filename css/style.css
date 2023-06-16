@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
 
+:root{
+  --cinza: #495057;
+}
+
 
 * {
     padding: 0;
@@ -66,7 +70,7 @@ nav {
   color: #000;
 }
 .inicio h1 span {
-  color: #495057;
+  color: var(--cinza);
 }
 
 .inicio .elementos {
@@ -819,4 +823,63 @@ color: black;
   outline: none;
   border-radius: 30px;
   font-size: 1em;
+}
+
+/* ////////////////// texto ia //////////// */
+
+.titulo_ia{
+  margin-top: 8%;
+  margin-left: -50%;
+  text-align: center;
+
+}
+
+.textinho_ia{
+  margin-top: 5%;
+  margin-left: 10%;
+  text-align: center;
+  width: 500px;
+}
+
+.img_ia img{
+  width: 700px;
+}
+
+/* ////////////////// pagina dieta //////////// */
+
+.papiro{
+  margin-top: 5%;
+  margin-left: 35%;
+  text-align: center;
+  background-color: #e6e6e64f;
+  border: 1px solid #474747;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  width: 400px;
+}
+
+.lista_dieta {
+  list-style-type: none;
+  padding: 0;
+}
+
+.lista_dieta li {
+  margin-bottom: 5px;
+}
+
+.lista_dieta li.concluido {
+  text-decoration: line-through;
+  color: #888888;
+}
+
+.titulo_dieta{
+  margin-top: 7%;
+  margin-right: 5%;
+  text-align: center;
+}
+
+.opcoes_dif{
+  margin-top: 6%;
+  margin-right: 5%;
+  text-align: center;
 }

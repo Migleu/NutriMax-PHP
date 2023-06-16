@@ -17,10 +17,10 @@
         <div class="logo"><h1><i class="fa-solid fa-apple-whole"></i>NutriMax</h1></div>
         <div class="links">
             <ul class="nav-itens">
-               <li><a href="#">Inicio</a></li>
+               <li><a href="index.php">Inicio</a></li>
                <li id="nutri" onclick="nutricionista()"><a href="#">Nutricionista</a></li>
                <li id="calendario" onclick="calendario()"><a href="#">Calendario</a></li>
-               <li><a href="dieta.php">Dietas</a></li>
+               <li><a href="#">Dietas</a></li>
             </ul>
         </div>
         <div class="btn">
@@ -30,26 +30,27 @@
 
     </nav>
 
-    <main class="main" id="main">
-        <div class="inicio">
-            <h1>Use nosso site para <span>organizar sua vida Fitness!</span></h1>
-            <p>Saiba mais sobre:</p>
-            <div class="elementos">
-                <div class="elemento">
-                    <p>Minha dieta</p>
-                </div>
+    <div class="titulo_dieta">
+        <h3>Refeições do dia</h3>
+    </div>
 
-                <div class="elemento">
-                    <a href="sobre_ia.php"><p>Nutricionista IA</p></a>
-                </div>
+    <div class="papiro">
+        <ul class="lista_dieta">
+            <li>Refeição 1</li>
+            <li class="concluido">Refeição 2</li>
+            <li>Refeição 3</li>
+            <li>Refeição 4</li>
+            <li class="concluido">Refeição 5</li>
+            <li>Refeição 6</li>
+            <li>Refeição 7</li>
+        </ul>
+    </div>
 
-                <div class="elemento">
-                    <p>Meu calendario</p>
-                </div>
-            </div>
-        </div>
-    </main>
+    <div class="opcoes_dif">
+        <h3>Opções de refeições diferentes:</h3>
+    </div>
 
-    <script src="./js/script.js"></script>
 </body>
-</html> 
+
+<footer>
+</footer>

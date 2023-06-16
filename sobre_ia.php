@@ -17,7 +17,7 @@
         <div class="logo"><h1><i class="fa-solid fa-apple-whole"></i>NutriMax</h1></div>
         <div class="links">
             <ul class="nav-itens">
-               <li><a href="#">Inicio</a></li>
+               <li><a href="index.php">Inicio</a></li>
                <li id="nutri" onclick="nutricionista()"><a href="#">Nutricionista</a></li>
                <li id="calendario" onclick="calendario()"><a href="#">Calendario</a></li>
                <li><a href="dieta.php">Dietas</a></li>
@@ -30,26 +30,18 @@
 
     </nav>
 
-    <main class="main" id="main">
-        <div class="inicio">
-            <h1>Use nosso site para <span>organizar sua vida Fitness!</span></h1>
-            <p>Saiba mais sobre:</p>
-            <div class="elementos">
-                <div class="elemento">
-                    <p>Minha dieta</p>
-                </div>
+    <div class="titulo_ia">
+        <h3>Nossa IA</h3>
+    </div>
 
-                <div class="elemento">
-                    <a href="sobre_ia.php"><p>Nutricionista IA</p></a>
-                </div>
+    <div class="textinho_ia">
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+    </div>
 
-                <div class="elemento">
-                    <p>Meu calendario</p>
-                </div>
-            </div>
-        </div>
-    </main>
+    </div>
+    
 
-    <script src="./js/script.js"></script>
 </body>
-</html> 
+
+<footer>
+</footer>
