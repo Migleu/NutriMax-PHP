@@ -17,15 +17,15 @@
         <div class="logo"><h1><i class="fa-solid fa-apple-whole"></i>NutriMax</h1></div>
         <div class="links">
             <ul class="nav-itens">
-               <li><a href="#">Inicio</a></li>
+               <li id="inicio" onclick="inicio()"><a href="#">Inicio</a></li>
                <li id="nutri" onclick="nutricionista()"><a href="#">Nutricionista</a></li>
                <li id="calendario" onclick="calendario()"><a href="#">Calendario</a></li>
-               <li><a href="#">Dietas</a></li>
+               <li><a href="">Dietas</a></li>
             </ul>
         </div>
         <div class="btn">
-            <a  href="./login.php"><button class="login">Login</button></a>
-            <a href="./cadastro.php"><button class="cadastro">Cadastro</button></a>
+            <a  href="./Login_Cadastro/login.php"><button class="login">Login</button></a>
+            <a href="./Login_Cadastro/cadastro.php"><button class="cadastro">Cadastro</button></a>
         </div>
 
     </nav>

@@ -503,6 +503,25 @@ function nutricionista() {
   </div>`
 }
 
+function inicio() {
+  main.innerHTML = `<div class="inicio">
+  <h1>Use nosso site para <span>organizar sua vida Fitness!</span></h1>
+  <p>Saiba mais sobre:</p>
+  <div class="elementos">
+      <div class="elemento">
+          <p>Minha dieta</p>
+      </div>
+
+      <div class="elemento">
+          <p>Nutricionista IA</p>
+      </div>
+
+      <div class="elemento">
+          <p>Meu calendario</p>
+      </div>
+  </div>
+</div>`
+}
 
 function exibirHoraAtual() {
   var agora = new Date();

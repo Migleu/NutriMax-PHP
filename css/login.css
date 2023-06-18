@@ -30,6 +30,7 @@ a{
 }
 
 .hero form {
+    justify-content: center;
     width: 100%;
     border: solid 2px #000;
     align-items: center;
@@ -43,47 +44,65 @@ a{
     box-shadow: var(--cor-principal) 8px 10px 4px;
 }
 
-.hero form h1 {
-    text-align: center;
-    margin-left: 15%;
-    margin-bottom: 20px;
-    width: 70%;
-    font-weight: bolder;
-    font-size: 25px;
-    color: var(--cor-principal);
-    border-bottom: solid 1px #000;
-}
 
 .hero form h1 span {
     color: #000;
 }
 
-.voltar{
-    display: flex;
-    margin-bottom: 20px;
-}
-
-.voltar p {
-    margin-top: -30px;
-    margin-left: 10px;
-}
-
-.container i {
-    font-size: 30px;
-    margin-left: -20px;
+.container .hero form .fa-arrow-left {
+    margin-top: 15%;
+    margin-left: 15%;
+    font-size: 35px;
     color: #000;
     transition: ease-in-out .5s;
+    transform: translate(-50%,-50%);
 }
 
-.container i:hover {
+.container .fa-arrow-left:hover {
     cursor: pointer;
     box-shadow: var(--cor-principal) 5px 1px 0px;
     transform: translateX(-5px);
 }
 
+.gp1{
+    text-align: center;
+    width: 70%;
+    margin-top: 10%;
+    margin-left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.gp1 p {
+    font-size: 4px;
+}
+
+.hero form .gp1 h1 {
+    font-weight: bolder;
+    font-size: 25px;
+    color: var(--cor-principal);
+}
+
+.fa-apple-whole {
+    font-size: 20px;
+}
+
+.hero form .gp1 hr{
+    width: 60%;
+    margin-left: 50%;
+    margin-bottom: 30px;
+    border-color: #000;
+    transform: translateX(-50%);
+}
+
+.gp2 {
+    margin-top: -40px;
+}
+
+
 .hero form input[type="text"],
 .hero form input[type="email"],
-.hero form input[type="password"] {
+.hero form input[type="password"],
+.hero form input[type="date"] {
     margin-left: 50%;
     width: 60%;
     margin-top: 10px;
@@ -91,16 +110,6 @@ a{
     box-shadow: var(--cor-principal) 3px 3px 0px;
     border: solid 1px var(--cor-principal);
     transform: translateX(-50%);
-}
-
-.gp1{
-    margin-top: 20%;
-    margin-left: 50%;
-    transform: translate(-50%,-50%);
-}
-
-.gp2 {
-    margin-top: -40px;
 }
 
 .hero form input[type="submit"] {
@@ -125,5 +134,7 @@ a{
     cursor: pointer;
     box-shadow: var(--cor-principal) 4px 5px 0px;
 }
+
+
 
 
