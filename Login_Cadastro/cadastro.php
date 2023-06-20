@@ -30,8 +30,6 @@
                     <input name="confirmSenha" type="password" placeholder="Confirme sua Senha"><br>
                     <input type="submit" nam="submit" value="Cadastrar">
 
-                    <input type="submit" nam="submit" value="Logar">
-
                     <p><a href="./login.php">Já tenho uma conta!</a></p>
                 </div>
             </form>

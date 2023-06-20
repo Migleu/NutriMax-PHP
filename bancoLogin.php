@@ -1,14 +1,8 @@
 <?php
 $servername = "localhost";  // Nome do servidor do banco de dados (no caso do XAMPP, geralmente é "localhost")
-
-$username = "root";  // Nome de usuário do banco de dados
-$password = "";
-$dbname = "nutrimax";      // Nome do banco de dados
-
 $username = "root";         // Nome de usuário do banco de dados
 $password = "";
 $dbname = "nutrimax";         // Nome do banco de dados
-
 
 
 // Criar uma conexão
@@ -24,21 +18,15 @@ $email = $_POST['email'];
 $senha = $_POST['senha'];
 
 // Consulta SQL para verificar as credenciais de login
-
 $sql = "SELECT * FROM tabela_logins WHERE email = '$email' AND senha = '$senha'";
-
-$sql = "SELECT * FROM tabela_logins WHERE email = '$email' OR cpf = '$email' AND senha = '$senha'";
-
 $result = $conn->query($sql);
 
 // Verificar se há resultados da consulta
 if ($result->num_rows == 1) {
-
     session_start();
     $_SESSION['logged_in'] = true;
     // Login válido, redirecionar para a página desejada
     header("Location: index.php");
-
     exit(); // Certifique-se de sair do script após o redirecionamento
 } else {
     // Credenciais inválidas, exibir mensagem de erro ou redirecionar para outra página
@@ -48,3 +36,5 @@ if ($result->num_rows == 1) {
 // Fechar a conexão
 $conn->close();
 ?>
+
+<!-- $sqlDados = "INSERT INTO tabela_logins (email, senha, nome, sobrenome, nome_mae, nome_pai, cpf) VALUES ('$email', '$senha', '$nome', '$sobrenome', '$nomeMae', '$nomePai', '$cpf')"; -->
