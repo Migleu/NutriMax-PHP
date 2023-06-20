@@ -15,6 +15,9 @@
         <div class="hero">
             <form action="../bancoLogin.php" method="post">
                 <a href="../index.php"><i class="fa-sharp fa-solid fa-arrow-left"></i></a>
+
+            <form action="bancoLogin.php" method="post">
+
                 <div class="gp1">
                 <i class="fa-solid fa-apple-whole"></i>
                     <h1>Bem-vindo <br><span>Logue-se!</span></span></h1>

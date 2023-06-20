@@ -13,8 +13,12 @@
 <body>
     <div class="container">
         <div class="hero">
+
             <form action="./user.php" method="post">
                 <a href="../index.php"><i class="fa-sharp fa-solid fa-arrow-left"></i></a>
+
+            <form action="bancoCadastro.php" method="post">
+
                 <div class="gp1">
                     <i class="fa-solid fa-apple-whole"></i>
                     <h1>Bem-vindo <br><span>Cadastre-se!</span></SPAn></h1>
@@ -25,6 +29,9 @@
                     <input name="senha" type="password" placeholder="Senha"><br>
                     <input name="confirmSenha" type="password" placeholder="Confirme sua Senha"><br>
                     <input type="submit" nam="submit" value="Cadastrar">
+
+                    <input type="submit" nam="submit" value="Logar">
+
                     <p><a href="./login.php">Já tenho uma conta!</a></p>
                 </div>
             </form>
