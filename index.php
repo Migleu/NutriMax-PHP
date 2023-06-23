@@ -36,7 +36,7 @@
             <p>Saiba mais sobre:</p>
             <div class="elementos">
                 <div class="elemento">
-                    <p>Minha dieta</p>
+                    <a href="dieta.php"><p>Minha dieta</p></a>
                 </div>
 
                 <div class="elemento">
