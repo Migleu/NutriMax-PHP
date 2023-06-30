@@ -952,6 +952,7 @@ nav {
   width: 40%;
   margin-right: 10%;
   border-radius: 10%;
+  filter:drop-shadow(25px -10px 30px #000000);
 }
 
 .textinho_ia2 {
@@ -967,6 +968,7 @@ nav {
   width: 40%;
   margin-right: 10%;
   border-radius: 10%;
+  filter:drop-shadow(-24px -8px 30px #000000);
 }
 
 .textinho_ia2>img {
