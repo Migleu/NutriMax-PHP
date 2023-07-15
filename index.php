@@ -30,12 +30,6 @@ if (isset($_SESSION['logged_in']) && $_SESSION['logged_in'] === true) {
                <li><a href="">Dietas</a></li>
             </ul>
         </div>
-        <div class="mobile-menu">
-            <div class="line1"></div>
-            <div class="line2"></div>
-            <div class="line3"></div>
-        </div>
-        
         <div class="max-width">
         <div class="imageContainer">
             <img src="camera.png" alt="" id="imgPhoto">
@@ -107,9 +101,14 @@ if (isset($_SESSION['logged_in']) && $_SESSION['logged_in'] === true) {
             <a  href="./Login_Cadastro/login.php"><button class="login">Login</button></a>
             <a href="./Login_Cadastro/cadastro.php"><button class="cadastro">Cadastro</button></a> 
         </div>
-
+        <div class="mobile-menu">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
     </nav>
 
+        
     <main class="main" id="main">
         <div class="inicio">
             <h1>Use nosso site para <span>organizar sua vida Fitness!</span></h1>

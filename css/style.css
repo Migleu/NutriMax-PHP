@@ -33,6 +33,7 @@ nav {
 
 .mobile-menu {
   cursor: pointer;
+  display: none;
 }
 
 .mobile-menu div {
@@ -144,6 +145,9 @@ input[type='file'] {
 @media screen and (max-width: 500px) {
   .nav-itens {
     display: none;
+  }
+  .mobile-menu {
+    display: block;
   }
   .inicio .elementos {
     display: block;
