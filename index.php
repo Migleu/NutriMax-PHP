@@ -21,6 +21,7 @@ if (isset($_SESSION['logged_in']) && $_SESSION['logged_in'] === true) {
 <body>
     <nav>
         <div class="logo"><h1><i class="fa-solid fa-apple-whole"></i>NutriMax</h1></div>
+        
         <div class="links">
             <ul class="nav-itens">
                <li id="inicio" onclick="inicio()"><a href="#">Inicio</a></li>
@@ -28,6 +29,11 @@ if (isset($_SESSION['logged_in']) && $_SESSION['logged_in'] === true) {
                <li id="calendario" onclick="calendario()"><a href="#">Calendario</a></li>
                <li><a href="">Dietas</a></li>
             </ul>
+        </div>
+        <div class="mobile-menu">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
         </div>
         
         <div class="max-width">
