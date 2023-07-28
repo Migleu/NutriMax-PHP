@@ -20,7 +20,7 @@
 <body>
     <nav>
         <div class="logo">
-            <h1><i class="fa-solid fa-apple-whole"></i>NutriMax</h1>
+            <a href="index.php"><h1><i class="fa-solid fa-apple-whole"></i>NutriMax</h1></a>
         </div>
         <div class="links">
             <ul class="nav-itens">
