@@ -8,6 +8,14 @@
     font-family: "Poppins", sans-serif;
 }
 
+/* body {
+  min-height: 100%;
+  background-image: url(../img/mesa-fundo.avif  );
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+} */
+
 a {
     text-decoration: none;
 }
@@ -37,10 +45,13 @@ nav {
 }
 
 .mobile-menu div {
+  margin-left: 50%;
+  margin-top: 8px;
+  margin-bottom: 8px;
   width: 32px;
   height: 2px;
   background-color: #000;
-  margin: 8px;
+  transform: translateX(-50%);
 }
 
 .logo i {
@@ -52,17 +63,6 @@ nav {
 }
 .logo:hover {
   cursor: pointer;
-}
-
-.login {
-    padding: 10px 40px;
-    font-size: 15px;
-    border: none;
-    border-radius: 5px;
-    color: #202020;
-    background-color: #fff;
-    font-family: 'Poppins', sans-serif;
-    cursor: pointer;
 }
 
 .main {
@@ -143,10 +143,17 @@ input[type='file'] {
 }
 
 @media screen and (max-width: 500px) {
+  nav {
+    display: block;
+    text-align: center;
+    justify-content: center;
+  }
   .nav-itens {
     display: none;
   }
   .mobile-menu {
+    margin: auto;
+    width: 15%;
     display: block;
   }
   .inicio .elementos {
@@ -154,6 +161,9 @@ input[type='file'] {
   }
   .inicio .elementos .elemento {
     margin-top: 5%;
+  }
+  .cadastro {
+    display: none;
   }
 }
 
