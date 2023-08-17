@@ -99,7 +99,7 @@ if (isset($_SESSION['logged_in']) && $_SESSION['logged_in'] === true) {
         </div>
         <div class="btn">
             <a  href="./Login_Cadastro/login.php"><button class="login">Login</button></a>
-            <a href="./Login_Cadastro/cadastro.php"><button class="cadastro">Cadastro</button></a> 
+            <a href="./teste.php"><button class="cadastro">Cadastro</button></a> 
         </div>
         <div class="mobile-menu">
             <div class="line1"></div>
