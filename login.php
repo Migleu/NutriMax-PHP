@@ -17,7 +17,7 @@
     <main>
         <div class="login-container" id="login-container">
             <div class="form-container">
-                <form class="form form-login" action="bancoLogin" method="post">
+                <form class="form form-login" action="bancoLogin.php" method="post">
                     <a href="./">Voltar</a>
                     <h2 class="form-title">Entrar com</h2>
                     <div class="form-social">
@@ -36,8 +36,8 @@
                         <input name="email" type="email" class="form-input" placeholder="Email">
                         <input name="senha" type="password" class="form-input" placeholder="Senha">
                     </div>
-                    <a href="#" class="form-link">Esqueceu a senha?</a>
-                    <button type="button" class="form-button">Logar</button>
+                    <a href="#" class="form-link">Esqueceu a senha?</a> 
+                    <button type="button" class="form-button" id="btn-login">Logar</button>
                     <p class="mobile-text">
                         Não tem conta?
                         <a href="#" id="open-register-mobile">Registre-se</a>
@@ -59,11 +59,11 @@
                     </div>
                     <p class="form-text">ou cadastre seu email</p>
                     <div class="form-input-container">
-                        <input type="text" class="form-input" placeholder="Nome">
-                        <input type="email" class="form-input" placeholder="Email">
-                        <input type="password" class="form-input" placeholder="Senha">
+                        <input name="nome" type="text" class="form-input" placeholder="Nome">
+                        <input name="email" type="email" class="form-input" placeholder="Email">
+                        <input name="senha" type="password" class="form-input" placeholder="Senha">
                     </div>
-                    <button type="button" class="form-button">Cadastrar</button>
+                    <button type="button" class="form-button" id="btn-cadastrar">Cadastrar</button>
                     <p class="mobile-text">
                         Já tem conta?
                         <a href="#" id="open-login-mobile">Login</a>
@@ -84,5 +84,7 @@
             </div>
         </div>
     </main>
+    <script src="./js/login.js"></script>
+    <script src="./js/cadastro.js"></script>
 </body>
 </html>

@@ -1,45 +1,32 @@
 <?php
-$servername = "localhost";  // Nome do servidor do banco de dados (no caso do XAMPP, geralmente é "localhost")
-$username = "root";  // Nome de usuário do banco de dados
-$password = "";
-$dbname = "nutrimax"; // Nome do banco de dados
+// Verifica se o formulário foi enviado
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $nome = $_POST["nome"];
+    $email = $_POST["email"];
+    $senha = $_POST["senha"];
 
+    // Conexão com o banco de dados
+    $servername = "localhost"; // Endereço do servidor MySQL
+    $username = "root"; // Nome de usuário do banco de dados
+    $password = "devisate"; // Senha do banco de dados
+    $dbname = "nutrimax"; // Nome do banco de dados
 
-$email = $_POST['email']; 
-$senha = $_POST['senha']; 
-$confirmSenha = $_POST['confirmSenha']; 
+    $conn = new mysqli($servername, $username, $password, $dbname);
 
+    // Verifica a conexão
+    if ($conn->connect_error) {
+        die("Falha na conexão: " . $conn->connect_error);
+    }
 
+    // Consulta SQL para inserir os dados no banco
+    $sql = "INSERT INTO tabela_login (nome, email, senha) VALUES ('$nome', '$email', '$senha')";
 
-// Criar uma conexão
-$conn = new mysqli($servername, $username, $password, $dbname);
+    if ($conn->query($sql) === TRUE) {
+        echo "success";
+    } else {
+        echo "error";
+    }
 
-// Verificar a conexão
-if ($conn->connect_error) {
-    die("Falha na conexão: " . $conn->connect_error);
+    $conn->close();
 }
-
-// Obter o valor do email a ser inserido
-
-// Preparar a consulta SQL para inserção
-$sql = "INSERT INTO tabela_logins (email, senha)
-        VALUES ('$email', '$senha')";
-
-
-// Executar a consulta
-if ($conn->query($sql) === TRUE) {
-    header("Location: ./Login_Cadastro/user.php");
-    echo "Email inserido com sucesso no banco de dados.";
-} else {
-    echo "Erro ao inserir email no banco de dados: " . $conn->error;
-}
-
-// } else {
-//     echo "Todos os campos devem ser preenchidos.";
-// }
-
-// Fechar a conexão
-$conn->close();
-
-
 ?>
