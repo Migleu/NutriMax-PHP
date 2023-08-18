@@ -519,3 +519,7 @@ function nutricionista() {
   </div>
   </div>`
 }
+
+function dieta_lincagem() {
+  window.location.href="dieta.php";
+}

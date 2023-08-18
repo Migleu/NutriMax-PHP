@@ -87,25 +87,10 @@ if (isset($_SESSION['logged_in']) && $_SESSION['logged_in'] === true) {
     <title>NutriMax</title>
 </head>
 <body>
-    <nav>
-        <div class="logo"><h1><i class="fa-solid fa-apple-whole"></i>NutriMax</h1></div>
-        <div class="links">
-            <ul class="nav-itens">
-               <li id="inicio" onclick="inicio()"><a href="#">Inicio</a></li>
-               <li id="nutri" onclick="nutricionista()"><a href="#">Nutricionista</a></li>
-               <li id="calendario" onclick="calendario()"><a href="#">Calendario</a></li>
-               <li><a href="">Dietas</a></li>
-            </ul>
-        </div>
-        <div class="btn">
-            <a href="./login.php"><button class="cadastro">Logar</button></a> 
-        </div>
-        <div class="mobile-menu">
-            <div class="line1"></div>
-            <div class="line2"></div>
-            <div class="line3"></div>
-        </div>
-    </nav>
+    
+<?php
+    require "./componentes/navbar.php";
+?>
 
         
     <main class="main" id="main">
@@ -126,6 +111,43 @@ if (isset($_SESSION['logged_in']) && $_SESSION['logged_in'] === true) {
                 </div>
             </div>
         </div>
+        
+        <div class="sexo">
+        <div class="plano">
+            <h1>Atinja seus <span>objetivos com nosso site:</span></h1>
+            <div class="balao">
+                <h1>01-</h1>
+                <p>Perfil de dieta para você</p>
+            </div>
+            <div class="balao">
+                <h1>02-</h1>
+                <p>Preparação de uma refeição rápida</p>
+            </div>
+            <div class="balao">
+                <h1>03-</h1>
+                <p>Desenhado para si</p>
+            </div>
+            <div class="balao">
+                <h1>04-</h1>
+                <p>Desenhado para si</p>
+            </div>
+        </div>
+        <div class="gif">
+            <img src="./img/gif4.gif" alt="">
+        </div>
+        </div>
+
+        <div class="sobre">
+            <h1>Sobre nossos elementos:</h1>
+            <hr>
+            <div class="sobre_elementos" class="sobre_dieta" id="sobre_dieta">
+                <h2>Dieta:</h2>
+                <p>A dieta é feita baseada em seus requisitos</p>
+            </div>
+            <div class="sobre_elementos" class="sobre_IA">
+                <h2>IA:</h2>
+                <p>A IA é uma IA</p>
+        </div>
     </main>
 
 <script src="./js/lincagens.js"></script><script src="./js/script.js"></script>
@@ -133,8 +155,6 @@ if (isset($_SESSION['logged_in']) && $_SESSION['logged_in'] === true) {
     
 </body>
 </html> 
-
-
 <?php
 }
 ?>

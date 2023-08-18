@@ -43,7 +43,7 @@
                     </p>
                 </form>
                 <form class="form form-register">
-                    <a href="./index.html">Voltar</a>
+                    <a href="./">Voltar</a>
                     <h2 class="form-title">Criar Conta</h2>
                     <div class="form-social">
                         <a href="#" class="social-icon">
