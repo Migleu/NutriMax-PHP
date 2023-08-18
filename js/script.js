@@ -1,21 +1,21 @@
 
-function exibirHoraAtual() {
-  var agora = new Date();
-  var horas = agora.getHours().toString().padStart(2, "0");
-  var minutos = agora.getMinutes().toString().padStart(2, "0");
+// function exibirHoraAtual() {
+//   var agora = new Date();
+//   var horas = agora.getHours().toString().padStart(2, "0");
+//   var minutos = agora.getMinutes().toString().padStart(2, "0");
 
-  var sufixo = horas >= 12 ? "PM" : "AM";
-  horas = horas % 12;
-  horas = horas ? horas : 12; // Define 12 horas para 0
+//   var sufixo = horas >= 12 ? "PM" : "AM";
+//   horas = horas % 12;
+//   horas = horas ? horas : 12; // Define 12 horas para 0
 
-  var horaAtual = horas + ":" + minutos + " " + sufixo;
+//   var horaAtual = horas + ":" + minutos + " " + sufixo;
 
-  var elementoHoraAtual = document.querySelector(".horas");
-  elementoHoraAtual.textContent = horaAtual;
-}
+//   var elementoHoraAtual = document.querySelector(".horas");
+//   elementoHoraAtual.textContent = horaAtual;
+// }
 
-// Chama a função exibirHoraAtual a cada segundo (1000 milissegundos)
-setInterval(exibirHoraAtual, 1000);
+// // Chama a função exibirHoraAtual a cada segundo (1000 milissegundos)
+// setInterval(exibirHoraAtual, 1000);
 
 function enviarTexto() {
   var textoInput = document.getElementById("input-msg").value;
@@ -86,6 +86,39 @@ file.addEventListener('change', () => {
     reader.readAsDataURL(file.files[0]);
 });
 
+function abrirDieta() {
+  document.getElementById("meuPopup").style.display = "block";
+
+  var h2 = "Sobre Dieta:";
+  document.getElementById("h2Sobre").innerHTML = h2;
+
+  var p = "A dieta é uma dieta";
+  document.getElementById("pSobre").innerHTML = p;
+}
+
+function abrirIA() {
+  document.getElementById("meuPopup").style.display = "block";
+
+  var h2 = "Sobre IA:";
+  document.getElementById("h2Sobre").innerHTML = h2;
+
+  var p = "A IA é uma IA";
+  document.getElementById("pSobre").innerHTML = p;
+}
+
+function abrirCalendario() {
+  document.getElementById("meuPopup").style.display = "block";
+
+  var h2 = "Sobre Calendario:";
+  document.getElementById("h2Sobre").innerHTML = h2;
+
+  var p = "O Calendario é um Calendario";
+  document.getElementById("pSobre").innerHTML = p;
+}
+
+function fecharPopup() {
+  document.getElementById("meuPopup").style.display = "none";
+}
 
   // function enviarEnter(event) {
   //   if (event.keyCode === 13) {

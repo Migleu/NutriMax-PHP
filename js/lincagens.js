@@ -477,48 +477,79 @@ function inicio() {
     main.innerHTML = `<div class="inicio">
     <h1>Use nosso site para <span>organizar sua vida Fitness!</span></h1>
     <p>Saiba mais sobre:</p>
+    <div class="popup" id="meuPopup">
+<h2 id="h2Sobre">Error</h2>
+<p id="pSobre">Informação não encontrada, tente novamente.</p>
+<button onclick="fecharPopup()">Fechar</button>
+</div>
     <div class="elementos">
-        <div class="elemento">
+        <div class="elemento" onclick="abrirDieta()">
             <p>Minha dieta</p>
         </div>
-  
-        <div class="elemento">
+
+        <div class="elemento" onclick="abrirIA()">
             <p>Nutricionista IA</p>
         </div>
-  
+
         <div class="elemento">
             <p>Meu calendario</p>
         </div>
     </div>
-  </div>`
+</div>
+
+<div class="container_plano">
+<div class="plano">
+    <h1><span>Atinja seus</span> objetivos com nosso site:</h1>
+    <div class="balao">
+        <h1>01-</h1>
+        <p>Perfil de dieta para você</p>
+    </div>
+    <div class="balao">
+        <h1>02-</h1>
+        <p>Preparação de uma refeição rápida</p>
+    </div>
+    <div class="balao">
+        <h1>03-</h1>
+        <p>Desenhado para si</p>
+    </div>
+    <div class="balao">
+        <h1>04-</h1>
+        <p>Desenhado para si</p>
+    </div>
+</div>
+<div class="img">
+    <img src="./img/img.webp" alt="">
+</div>
+</div>
+    <hr id="hr">`
   }
-function nutricionista() {
-  main.innerHTML = ` <div class="tudo">
-  <div class="box">
-  <div class="header">
-  <div class="img-perfil">
-  <div class="userimg">
-  <img src="./img/nutri.jpg" alt="" class="cover">
-  </div>
-  <h4>Nutricionista <br><span>IA</span></h4>
-  </div>
-  <ul class="horario">
-  <li class="horas">
-  </li>
-  </ul> 
-  </div>
-  <div class="chat" id="chat">
-  <div class="messages" id="mensagens">
-  <!-- As mensagens serão adicionadas aqui dinamicamente -->
-  </div>
-  </div>
-  <div class="chatbox-input">
-  <input type="text" id="input-msg" onkeydown="enviarEnter(event)" placeholder="Mensagem">
-  <i class="fa-solid fa-share" onclick="enviarTexto()"></i>
-  </div>
-  </div>
-  </div>`
-}
+// function nutricionista() {
+//   main.innerHTML = ` <div class="tudo">
+//   <div class="box">
+//   <div class="header">
+//   <div class="img-perfil">
+//   <div class="userimg">
+//   <img src="./img/nutri.jpg" alt="" class="cover">
+//   </div>
+//   <h4>Nutricionista <br><span>IA</span></h4>
+//   </div>
+//   <ul class="horario">
+//   <li class="horas">
+//   </li>
+//   </ul> 
+//   </div>
+//   <div class="chat" id="chat">
+//   <div class="messages" id="mensagens">
+//   <!-- As mensagens serão adicionadas aqui dinamicamente -->
+//   </div>
+//   </div>
+//   <div class="chatbox-input">
+//   <input type="text" id="input-msg" onkeydown="enviarEnter(event)" placeholder="Mensagem">
+//   <i class="fa-solid fa-share" onclick="enviarTexto()"></i>
+//   </div>
+//   </div>
+//   </div>`
+// }
 
 function dieta_lincagem() {
   window.location.href="dieta.php";
