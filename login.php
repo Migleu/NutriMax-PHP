@@ -9,14 +9,15 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300;400;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/login.css">
+    <link rel="shortcut icon" href="./img/apple_icon.png" type="image/x-icon">
     <script src="./js/login.js" defer></script>
-    <title>Login</title>
+    <title>Login -Faça parte do nosso grupo</title>
 </head>
 <body>
     <main>
         <div class="login-container" id="login-container">
             <div class="form-container">
-                <form class="form form-login">
+                <form class="form form-login" action="bancoLogin" method="post">
                     <a href="./">Voltar</a>
                     <h2 class="form-title">Entrar com</h2>
                     <div class="form-social">
@@ -32,8 +33,8 @@
                     </div>
                     <p class="form-text">ou utilize sua conta</p>
                     <div class="form-input-container">
-                        <input type="email" class="form-input" placeholder="Email">
-                        <input type="password" class="form-input" placeholder="Senha">
+                        <input name="email" type="email" class="form-input" placeholder="Email">
+                        <input name="senha" type="password" class="form-input" placeholder="Senha">
                     </div>
                     <a href="#" class="form-link">Esqueceu a senha?</a>
                     <button type="button" class="form-button">Logar</button>

@@ -18,7 +18,7 @@ $email = $_POST['email'];
 $senha = $_POST['senha'];
 
 // Consulta SQL para verificar as credenciais de login
-$sql = "SELECT * FROM tabela_logins WHERE email = '$email' AND senha = '$senha'";
+$sql = "SELECT * FROM tabela_login WHERE email = '$email' AND senha = '$senha'";
 $result = $conn->query($sql);
 
 // Verificar se há resultados da consulta
