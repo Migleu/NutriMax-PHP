@@ -5,11 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/calendario.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="shortcut icon" href="./img/apple_icon.png" type="image/x-icon">
+    <script src="./js/lincagens.js"></script><script src="./js/script.js"></script>
     <title>NutriMax </title>
 </head>
 <body>
@@ -23,11 +25,13 @@
         <div class="inicio">
             <h1>Use nosso site para <span>organizar sua vida Fitness!</span></h1>
             <p>Saiba mais sobre:</p>
+
             <div class="popup" id="meuPopup">
-  <h2 id="h2Sobre">Error</h2>
-  <p id="pSobre">Informação não encontrada, tente novamente.</p>
-  <button id="fecharPopup" onclick="fecharPopup()">Fechar</button>
-</div>
+                <h2 id="h2Sobre">Error</h2>
+                <p id="pSobre">Informação não encontrada, tente novamente.</p>
+                <button id="fecharPopup" onclick="fecharPopup()">Fechar</button>
+            </div>
+
             <div class="elementos">
                 <div class="elemento" onclick="abrirDieta()">
                     <p>Minha dieta</p>
@@ -68,10 +72,8 @@
         </div>
         </div>
             <hr id="hr">
-        
     </main>
 
-<script src="./js/lincagens.js"></script><script src="./js/script.js"></script>
 </body>
 <footer>
 <div id="footer_content">
