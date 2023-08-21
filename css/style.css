@@ -14,14 +14,6 @@
     font-family: "Poppins", sans-serif;
 }
 
-/* body {
-  min-height: 100%;
-  background-image: url(../img/mesa-fundo.avif  );
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
-} */
-
 a {
     text-decoration: none;
 }
@@ -246,6 +238,7 @@ footer {
 }
 
 #footer_content {
+  max-height: 400px;
   background-color: var(--primary_color);
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -353,7 +346,7 @@ footer {
   display: flex;
   justify-content: center;
   background-color: var(--primary_color);
-  font-size: 0.9rem;
+  font-size: 0.6rem;
   padding: 1.5rem;
   font-weight: 100;
 }
@@ -454,6 +447,7 @@ footer {
   
 
   .container {
+    filter: blur(2px);
     margin-top: 50px;
     width: 85%;
     min-height: 120vh;

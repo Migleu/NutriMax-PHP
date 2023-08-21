@@ -8,7 +8,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Conexão com o banco de dados
     $servername = "localhost"; // Endereço do servidor MySQL
     $username = "root"; // Nome de usuário do banco de dados
-    $password = "devisate"; // Senha do banco de dados
+    $password = ""; // Senha do banco de dados
     $dbname = "nutrimax"; // Nome do banco de dados
 
     $conn = new mysqli($servername, $username, $password, $dbname);
