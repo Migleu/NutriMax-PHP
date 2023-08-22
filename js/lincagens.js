@@ -1,40 +1,46 @@
-const main = document.getElementById("main");
+// const main = document.getElementById("main");
 var meuNutri = document.getElementById('nutri');
 var meuCalendario = document.getElementById('calendario');
 
 function calendario() {
-    main.innerHTML = `
-    <div class="container">
-    <div class="left">
-    <div class="calendar">
-    <div class="month">
-    <i class="fas fa-angle-left prev"></i>
-    <div class="date">março 2015</div>
-    <i class="fas fa-angle-right next"></i>
-    </div>
-    <div class="weekdays">
-    <div>Dom</div>
-    <div>Seg</div>
-    <div>Ter</div>
-    <div>Qua</div>
-    <div>Qui</div>
-    <div>Sex</div>
-    <div>Sab</div>
-    </div>
-    <div class="days"></div>
-    </div>
-    </div>
-    <div class="right">
-    <div class="today-date">
-    <div class="event-day">Dieta</div>
-    <div class="event-date">12th dezembro 2022</div>
-    <div class="goto-today">
-    <button class="today-btn">Hoje</button>
-    </div>
-    </div>
-    <div class="events"></div>
-    </div>
-    </div>`;
+    const mainElement = document.getElementById("main");
+
+    const calendarHTML = `
+        <div class="container">
+            <div class="left">
+                <div class="calendar">
+                    <div class="month">
+                        <i class="fas fa-angle-left prev"></i>
+                        <div class="date">março 2015</div>
+                        <i class="fas fa-angle-right next"></i>
+                    </div>
+                    <div class="weekdays">
+                        <div>Dom</div>
+                        <div>Seg</div>
+                        <div>Ter</div>
+                        <div>Qua</div>
+                        <div>Qui</div>
+                        <div>Sex</div>
+                        <div>Sab</div>
+                    </div>
+                    <div class="days"></div>
+                </div>
+            </div>
+            <div class="right">
+                <div class="today-date">
+                    <div class="event-day">Dieta</div>
+                    <div class="event-date">12th dezembro 2022</div>
+                    <div class="goto-today">
+                        <button class="today-btn">Hoje</button>
+                    </div>
+                </div>
+                <div class="events"></div>
+            </div>
+        </div>
+    `;
+
+    mainElement.innerHTML = calendarHTML;
+    
       
       
     
