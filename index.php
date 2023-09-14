@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/navbar.css">
     <link rel="stylesheet" href="./css/calendario.css">
+    <link rel="stylesheet" href="./css/dieta.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
@@ -23,85 +24,24 @@
 
 <body>
 
+            <!-- Navbar -->
     <?php
-    require "./componentes/navbar.php";
-?>
+        require "./componentes/navbar.php";
+    ?>
 
+            <!-- main -->
     <?php
-    require "./componentes/main.php";
-?>
+        require "./componentes/main.php";
+    ?>
+
 </body>
 
 <footer>
-    <div id="footer_content">
-        <div id="footer_contacts">
-            <h1><i class="fa-solid fa-apple-whole"></i>NutriMax</h1>
-            <p>entre em contato conosco.</p>
 
-            <div id="footer_social_media">
-                <a href="#" class="footer-link" id="instagram">
-                    <i class="fa-brands fa-instagram"></i>
-                </a>
-
-                <a href="#" class="footer-link" id="facebook">
-                    <i class="fa-brands fa-facebook-f"></i>
-                </a>
-
-                <a href="#" class="footer-link" id="whatsapp">
-                    <i class="fa-brands fa-whatsapp"></i>
-                </a>
-            </div>
-        </div>
-
-        <ul class="footer-list">
-            <li>
-                <h3>Blog</h3>
-            </li>
-            <li>
-                <a href="#" class="footer-link">Tech</a>
-            </li>
-            <li>
-                <a href="#" class="footer-link">Adventures</a>
-            </li>
-            <li>
-                <a href="#" class="footer-link">Music</a>
-            </li>
-        </ul>
-
-        <ul class="footer-list">
-            <li>
-                <h3>Products</h3>
-            </li>
-            <li>
-                <a href="#" class="footer-link">App</a>
-            </li>
-            <li>
-                <a href="#" class="footer-link">Desktop</a>
-            </li>
-            <li>
-                <a href="#" class="footer-link">Cloud</a>
-            </li>
-        </ul>
-
-        <div id="footer_subscribe">
-            <h3>Subscribe</h3>
-
-            <p>
-                Envie uma mensagem em nosso email, digite a mensagem abaixo
-            </p>
-
-            <div id="input_group">
-                <input type="email" id="email">
-                <button>
-                    <i class="fa-regular fa-envelope"></i>
-                </button>
-            </div>
-        </div>
-    </div>
-
-    <div id="footer_copyright">
-        <h3>&#169 2023</h3>
-    </div>
+            <!-- footer -->
+    <?php
+        require "./componentes/footer.php";
+    ?>
 </footer>
 
 </html>

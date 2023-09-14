@@ -1,0 +1,71 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
+
+:root {
+  --primary_color: #202020;
+  --secundary_color: #495057;
+}
+
+* {
+  scroll-behavior: smooth;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+.main {
+  margin-top: 2%;
+}
+
+
+.container-dieta {
+   margin: 5% 25px 16px 25px;
+}
+
+.dia {
+    width: 10%;
+}
+.dieta {
+    /* display: flex; */
+    font-size: 10px;
+    border: solid 1px;
+    min-height: 200px;
+}
+/* .verificar{
+    width: 40%;
+    border-right: solid 1px;
+} */
+.receita {
+    /* width: 60%; */
+    text-align: center;
+    position: relative;
+    min-height: 100%;
+    padding: 20px 0;
+    max-height: 600px;
+    overflow-y: auto;
+}
+.receita::-webkit-scrollbar {
+    width: 10px; /* Largura da barra de rolagem */
+}
+
+.receita::-webkit-scrollbar-thumb {
+    background-color: rgb(85, 85, 85); /* Cor do polegar da barra de rolagem */
+}
+
+.receita h1 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.receita li {
+    font-size: 15px;
+    list-style-type: none;
+}
+.meu-corpo{
+    width: 35%;
+    border: solid 1px;
+    text-align: center;
+}
+.meu-corpo h1 {
+    margin-top: 20px;
+}

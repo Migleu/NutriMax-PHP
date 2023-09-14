@@ -15,9 +15,7 @@
 ?>
 
     <main class="main" id="main">
-        <div class="container">
 
-        </div>
     </main>
 
 
