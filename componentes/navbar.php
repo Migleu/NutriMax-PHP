@@ -5,7 +5,7 @@
     <div class="links">
         <ul class="nav-itens">
             <li id="inicio" onclick="inicio()"><a href="#">Inicio</a></li>
-            <li id="nutri"><a href="./nutricionista.php">Nutricionista</a></li>
+            <li id="nutri"><a href="#">Nutricionista</a></li>
             <li id="calendario" onclick="calendario()"><a href="#">Calendario</a></li>
             <li><a href="#" onclick="dieta()">Dietas</a></li>
         </ul>

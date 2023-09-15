@@ -1,5 +1,9 @@
 <main class="main" id="main">
-<div class="inicio">
+    <!-- <div class="container-nutricionista">
+        <h1>Sla</h1>
+    </div> -->
+
+    <div class="inicio">
             <h1>Use nosso site para <span>organizar sua vida Fitness!</span></h1>
             <p>Saiba mais sobre:</p>
 
@@ -129,5 +133,7 @@
                         alt="">
                 </div>
             </div>
-        </div>
+        </div> 
 </main>
+
+
