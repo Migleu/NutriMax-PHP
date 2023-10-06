@@ -1,14 +1,34 @@
 <main class="main" id="main">
+    <div class="popupNutri" id="popupNutri">
+        <h1 onclick="fecharPopupNutri()"><i class="fa-solid fa-arrow-left"></i></h1>
+        <h2>Preencha a tabela para montarmos sua dieta:</h2>
+        
+        <form action="./bancoPerfil.php" method="post">
+        <div class="gp1">
+            <input type="text" placeholder="Altura em cm"><br>
+            <input type="text" placeholder="Peso em kg"><br>
+            <input type="text" placeholder="Idade">
+        </div>
+        <div class="gp2">
+            <input type="text" placeholder="Sexo"><br>
+            <input type="text" placeholder="Idade"><br>
+            <input type="submit" value="Enviar">
+        </div>
+        </form>
+    </div>
 
+
+
+    <div class="popup" id="meuPopup">
+        <h2 id="h2Sobre">Error</h2>
+        <p id="pSobre">Informação não encontrada, tente novamente.</p>
+        <button id="fecharPopup" onclick="fecharPopup()">Fechar</button>
+    </div>
+    
+    <div id="container_tudo">
     <div class="inicio">
             <h1>Use nosso site para <span>organizar sua vida Fitness!</span></h1>
             <p>Saiba mais sobre:</p>
-
-            <div class="popup" id="meuPopup">
-                <h2 id="h2Sobre">Error</h2>
-                <p id="pSobre">Informação não encontrada, tente novamente.</p>
-                <button id="fecharPopup" onclick="fecharPopup()">Fechar</button>
-            </div>
 
             <div class="elementos">
                 <div class="elemento" onclick="abrirDieta()">
@@ -128,6 +148,7 @@
                     <p>Muito bom!! Consegui resultados incriveis em poucos dias.</p>
                     <img id="stars" src="https://www.tecnonutri.com.br/campanha/15em3/img/tecnonutri/fivestars.png"
                         alt="">
+                </div>
                 </div>
             </div>
         </div>  

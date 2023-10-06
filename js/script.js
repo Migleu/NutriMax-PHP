@@ -22,6 +22,12 @@
 //     reader.readAsDataURL(file.files[0]);
 // });
 
+function nutricionistaPopup() {
+  document.getElementById("popupNutri").style.display = "block";
+  document.getElementById("container_tudo").style.filter = "blur(5px)";
+}
+
+
 function abrirDieta() {
   document.getElementById("meuPopup").style.display = "block";
 
@@ -54,4 +60,9 @@ function abrirCalendario() {
 
 function fecharPopup() {
   document.getElementById("meuPopup").style.display = "none";
+}
+
+function fecharPopupNutri() {
+  document.getElementById("popupNutri").style.display = "none";
+  document.getElementById("container_tudo").style.filter = "blur(0px)";
 }

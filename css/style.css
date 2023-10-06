@@ -26,6 +26,7 @@ a {
 }
 
 nav {
+    font-size: 15px;
     display: flex;
     justify-content: space-around;
     font-family: 'Poppins', sans-serif;
@@ -450,7 +451,74 @@ footer {
   font-weight: 100;
 }
 
+
+
+.popupNutri {
+  padding: 50px;
+  display: none;
+  position: fixed;
+  min-width: 70%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 20px;
+  background-color: white;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+  z-index: 1;
+}
+
+.popupNutri h2 {
+  text-align: center;
+  font-size: 30px;
+  /* border: solid 1px; */
+  margin-bottom: 30px;
+}
+
+.popupNutri form {
+  width: 60%;
+  border: solid 1px;
+  border-radius: 15px;
+  border-top: none;
+  border-bottom: none;
+  justify-content: center;
+  padding: 50px;
+  display: flex;
+  margin-left: 50%;
+  transform: translateX(-50%);
+}
+.gp1 {
+  padding: 30px;
+  /* border: solid 1px; */
+  margin-right: 3%;
+}
+.gp2 {
+  padding: 30px;
+  /* border: solid 1px; */
+
+}
+.popupNutri form input[type="text"] {
+  border-color: var(--primary_color);
+  margin-top: 10px;
+  padding: 20px;
+  border-radius: 10px;
+}
+.popupNutri form input[type="submit"] {
+  color: #fff;
+  font-weight: 600;
+  font-size: 15px;
+  background-color: var(--primary_color);
+  margin-left: 30%;
+  margin-top: 15px;
+  padding: 15px;
+  width: 80%;
+  border-radius: 10px;
+}
+.popupNutri form input[type="submit"]:hover {
+  cursor: pointer;
+}
+
 .popup {
+  text-align: center;
   display: none;
   position: fixed;
   min-width: 30%;
